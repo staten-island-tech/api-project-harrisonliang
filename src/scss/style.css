@@ -1,0 +1,97 @@
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #111;
+}
+
+.header {
+  font-size: 5.2rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.top-rated {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.top-banner {
+  color: var(#fff);
+}
+
+.top-banner form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-banner form input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+.top-banner form input::-webkit-input-placeholder {
+  color: currentColor;
+}
+
+.top-banner form input:-ms-input-placeholder {
+  color: currentColor;
+}
+
+.top-banner form input::-ms-input-placeholder {
+  color: currentColor;
+}
+
+.top-banner form input::placeholder {
+  color: currentColor;
+}
+
+.top-banner form button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background: var(--red);
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+.top-banner form button:hover {
+  background: var(--darkred);
+}
+
+.top-banner form .msg {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+/*# sourceMappingURL=style.css.map */

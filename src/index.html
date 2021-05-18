@@ -12,15 +12,18 @@
   <body>
     <h1 class="header">Sweater Weather?</h1>
     <h2 class="top-rated">A Fashion Rescue</h2>
-    <section class="top-banner"></section>
-    <div class="container">
-      <form>
-        <input type="text" placeholder="Search..." />
-        <button type="submit">SUBMIT</button>
+    <section class="top-banner">
+      <div class="container">
+        <input type="text" class="inputVal" placeholder="Search for a city" />
+        <button type="submit" value="submit" class="submit">Submit</button>
         <span class="msg"></span>
-      </form>
+      </div>
+    </section>
+    <div class="weather">
+      <h2><div class="temperature"></div></h2>
+      <h2><div class="description"></div></h2>
+      <h2><div class="humidity"></div></h2>
     </div>
-
     <script src="js/index.js"></script>
   </body>
 </html>

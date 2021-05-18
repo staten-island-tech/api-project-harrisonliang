@@ -7,7 +7,7 @@ const humValue = document.querySelector(".humidity");
 
 button.addEventListener("click", function () {
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       inputValue.value +
       "&units=imperial&appid=da0a318dadbce04410d8277c890cd27c"
   )

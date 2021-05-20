@@ -1,5 +1,15 @@
-$font-main: "Asap", sans-serif;
-$font-second: "Josefin Slab", serif;
+@import "_hover.scss";
+@import "_variables.scss";
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+
 html,
 body {
   box-sizing: border-box;
@@ -11,12 +21,11 @@ body {
   font-weight: 500;
 }
 body {
-  background-color: #111;
+  background-color: color(background-color);
 }
 
 .header {
   font-size: 5.2rem;
-
   margin: 3rem auto;
   text-align: center;
 }

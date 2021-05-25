@@ -20,6 +20,7 @@ body {
 }
 body {
   background-color: color(darkest);
+  background: linear-gradient(to top, color(darkest), color(teal));
   align-content: center;
   text-align: center;
 }
@@ -31,6 +32,7 @@ header {
   margin: 2rem auto;
   text-align: center;
   background-color: color(background-color);
+  opacity: 80%;
   border-bottom: 5rem;
   border-color: color(backsplash);
   border-style: solid;
@@ -39,6 +41,8 @@ header {
 
 .header-title {
   font-size: 15rem;
+  letter-spacing: 1rem;
+  text-shadow: color(backsplash) 7px 7px;
 }
 
 .top-rated {

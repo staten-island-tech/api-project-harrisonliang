@@ -1,45 +1,48 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Prompt:ital,wght@1,800&family=Quattrocento+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link rel="stylesheet" href="scss/_hover.scss" />
+  </head>
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Prompt:ital,wght@1,800&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="scss/style.scss" />
-  <link rel="stylesheet" href="scss/_hover.scss"/>
+  <header>
+    <h1 class="header-title">SWEATER WEATHER</h1>
+    <h2 class="top-rated">A Fashion Rescue</h2>
+  </header>
 
-</head>
-
-<header>
-  <h1 class="header-title">SWEATER WEATHER</h1>
-  <h2 class="top-rated">A Fashion Rescue</h2>
-
-</header>
-
-<body>
-  
-  <section class="top-banner">
-    <div class="container">
-      <input type="text" class="inputVal" placeholder="Search for a city" />
-      <button type="submit" value="submit" class="submit">Submit</button>
-      <span class="msg"></span>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <input type="text" class="inputVal" placeholder="Search for a city" />
+        <button type="submit" value="submit" class="submit">Submit</button>
+        <span class="msg"></span>
+      </div>
+    </section>
+    <div class="weather">
+      <div class="notification"></div>
+      <h2>
+        <div class="temperature"></div>
+      </h2>
+      <h2>
+        <div class="description"></div>
+      </h2>
+      <h2>
+        <div class="humidity"></div>
+      </h2>
     </div>
-  </section>
-  <div class="weather">
-    <h2>
-      <div class="temperature"></div>
-    </h2>
-    <h2>
-      <div class="description"></div>
-    </h2>
-    <h2>
-      <div class="humidity"></div>
-    </h2>
-  </div>
-  <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 
+  <section class="fashion">
+    <div id="recommendation"></div>
+  </section>
 </html>

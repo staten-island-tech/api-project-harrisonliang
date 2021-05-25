@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+.submit:hover {
+  background-color: color(light-blue);
+  transform: translateY(0.5rem);
+  transition: all 0.5s;
+  color: color(background-color);
+  border-radius: 3rem;
+  border-color: color(backsplash);
+}

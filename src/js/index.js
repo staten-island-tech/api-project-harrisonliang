@@ -7,6 +7,8 @@ const humValue = document.querySelector(".humidity");
 const iconValue = document.querySelector(".icon");
 
 button.addEventListener("click", function () {
+  document.querySelector(".weather").style.display = "block";
+
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       inputValue.value +
@@ -32,8 +34,6 @@ button.addEventListener("click", function () {
       iconValue.innerHTML =
         '<img src="' + imgSrc + '"alt="Icon for the weather" />';
     });
-
-  // .catch(() => alert("Fix it."));
 });
 
 // create a list of our used consts

@@ -25,8 +25,6 @@ button.addEventListener("click", function () {
       humValue.innerHTML = "Humidity: " + humidity + "%";
       descValue.innerHTML = "Description: " + description;
     });
-
-  // .catch(() => alert("Fix it."));
 });
 
 // create a list of our used consts

@@ -6,6 +6,8 @@ const descValue = document.querySelector(".description");
 const humValue = document.querySelector(".humidity");
 
 button.addEventListener("click", function () {
+  document.querySelector(".weather").style.display = "block";
+
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       inputValue.value +

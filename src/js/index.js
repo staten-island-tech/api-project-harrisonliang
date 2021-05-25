@@ -4,6 +4,7 @@ const button = document.querySelector(".submit");
 const tempValue = document.querySelector(".temperature");
 const descValue = document.querySelector(".description");
 const humValue = document.querySelector(".humidity");
+const iconValue = document.querySelector(".icon");
 
 button.addEventListener("click", function () {
   fetch(
@@ -17,13 +18,18 @@ button.addEventListener("click", function () {
       const description = response["weather"][0]["description"];
       const temp = response["main"]["temp"];
       const humidity = response["main"]["humidity"];
+      const iconID = response["weather"][0]["icon"];
       console.log(description);
       console.log(temp);
       console.log(humidity);
+      console.log(iconID);
 
       tempValue.innerHTML = "Temperature: " + temp + "°F";
       humValue.innerHTML = "Humidity: " + humidity + "%";
       descValue.innerHTML = "Description: " + description;
+      const imgSrc = "http://openweathermap.org/img/w/" + iconID + ".png";
+
+      iconValue.innerHTML = '<img src="' + imgSrc + '"alt="" />';
     });
 
   // .catch(() => alert("Fix it."));

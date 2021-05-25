@@ -19,25 +19,26 @@ body {
   font-weight: 500;
 }
 body {
-  background-color: color(background-color);
+  background-color: color(darkest);
   align-content: center;
   text-align: center;
 }
 
 header {
-  font-size: 12rem;
+  font-size: 15rem;
   font-family: font(header);
   color: color(light-blue);
-  margin: 3rem auto;
+  margin: 2rem auto;
   text-align: center;
-  background-color: color(backsplash);
+  background-color: color(background-color);
   border-bottom: 5rem;
-  border-color: color(darkest);
+  border-color: color(backsplash);
   border-style: solid;
+  line-height: 4rem;
 }
 
 .header-title {
-  font-size: 12rem;
+  font-size: 15rem;
 }
 
 .top-rated {
@@ -45,7 +46,7 @@ header {
   font-size: 4.6rem;
   font-family: font(text);
   letter-spacing: 0.4rem;
-  color: color(light-yellow);
+  color: color(teal);
 }
 
 .weather {
@@ -68,7 +69,7 @@ header {
   font-size: 4rem;
   margin: 3rem;
   color: color(light-blue);
-  border-color: color(light-yellow);
+  border-color: color(background-color);
   border-width: 1rem;
 }
 

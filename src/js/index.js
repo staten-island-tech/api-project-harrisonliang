@@ -29,7 +29,8 @@ button.addEventListener("click", function () {
       descValue.innerHTML = "Description: " + description;
       const imgSrc = "http://openweathermap.org/img/w/" + iconID + ".png";
 
-      iconValue.innerHTML = '<img src="' + imgSrc + '"alt="" />';
+      iconValue.innerHTML =
+        '<img src="' + imgSrc + '"alt="Icon for the weather" />';
     });
 
   // .catch(() => alert("Fix it."));

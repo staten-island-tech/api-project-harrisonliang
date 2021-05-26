@@ -6,92 +6,83 @@ body {
   margin: 0;
   font-size: 62.5%;
   color: white;
-  font-family: "Josefin Slab", serif;
+  font-family: "Prompt";
   font-weight: 500;
 }
 
 body {
-  background-color: #111;
+  background-color: #060629;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060629), to(#108690));
+  background: linear-gradient(to top, #060629, #108690);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
 }
 
-.header {
-  font-size: 5.2rem;
-  margin: 3rem auto;
+header {
+  font-size: 15rem;
+  font-family: "Prompt";
+  color: #b0dcff;
+  margin: 2rem auto;
   text-align: center;
+  background-color: #1d1e4e;
+  opacity: 0.8;
+  border-bottom: 5rem;
+  border-color: #2f3180;
+  border-style: solid;
+}
+
+.header-title {
+  font-size: 18vh;
+  letter-spacing: 1rem;
+  text-shadow: #2f3180 7px 7px;
+  margin-bottom: 2rem;
 }
 
 .top-rated {
-  margin: 1rem auto 2rem auto;
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 4.6rem;
+  font-family: "Quattrocento Sans";
+  letter-spacing: 0.4rem;
+  color: #108690;
 }
 
-.top-banner {
-  color: var(#fff);
+.weather {
+  font-family: "Quattrocento Sans";
+  font-size: 3rem;
+  color: #b4ffec;
+  background-color: #108690;
+  padding: 5rem;
+  margin: 7rem;
+  border-radius: 3rem;
 }
 
-.top-banner form {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.submit {
+  font-family: "Prompt";
+  background-color: #108690;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+  margin: 3rem;
+  color: #b0dcff;
+  border-color: #1d1e4e;
+  border-width: 1rem;
 }
 
-.top-banner form input {
-  font-size: 2rem;
-  height: 40px;
-  padding: 5px 5px 10px;
-  border-bottom: 1px solid;
-}
-
-.top-banner form input::-webkit-input-placeholder {
-  color: currentColor;
-}
-
-.top-banner form input:-ms-input-placeholder {
-  color: currentColor;
-}
-
-.top-banner form input::-ms-input-placeholder {
-  color: currentColor;
-}
-
-.top-banner form input::placeholder {
-  color: currentColor;
-}
-
-.top-banner form button {
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  padding: 15px 20px;
-  margin-left: 15px;
-  border-radius: 5px;
-  background: var(--red);
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-
-button,
-input {
-  border: none;
-  background: none;
-  outline: none;
-  color: inherit;
-}
-
-.top-banner form button:hover {
-  background: var(--darkred);
-}
-
-.top-banner form .msg {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  max-width: 450px;
-  min-height: 40px;
+.inputVal {
+  font-size: 3rem;
+  font-family: "Quattrocento Sans";
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+  margin: 3rem;
+  background-color: #b0dcff;
+  border-color: #108690;
+  border-width: 1rem;
+  color: #060629;
 }
 /*# sourceMappingURL=style.css.map */

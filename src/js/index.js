@@ -32,7 +32,7 @@ button.addEventListener("click", function () {
       const imgSrc = "http://openweathermap.org/img/w/" + iconID + ".png";
 
       iconValue.innerHTML =
-        '<img src="' + imgSrc + '"alt="Icon for the weather" />';
+        '<img src="' + imgSrc + '"alt="Icon for the weather" height="30%"/>';
     });
 });
 

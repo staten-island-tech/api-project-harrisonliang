@@ -1,3 +1,10 @@
+import LocomotiveScroll from "locomotive-scroll";
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("header-title"),
+  smooth: true,
+});
+
 // setting our variables
 const inputValue = document.querySelector(".inputVal");
 const button = document.querySelector(".submit");

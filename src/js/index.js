@@ -40,6 +40,7 @@ button.addEventListener("click", function () {
 
       iconValue.innerHTML =
         '<img src="' + imgSrc + '"alt="Icon for the weather" height= "25%" />';
+
     });
 });
 

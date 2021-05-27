@@ -7,7 +7,6 @@ const humValue = document.querySelector(".humidity");
 const iconValue = document.querySelector(".icon");
 
 button.addEventListener("click", async function () {
-  document.querySelector(".weather").style.display = "block";
   try {
     await fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -25,6 +24,7 @@ button.addEventListener("click", async function () {
         console.log(temp);
         console.log(humidity);
         console.log(iconID);
+        document.querySelector(".weather").style.display = "block";
 
         tempValue.innerHTML = "Temperature: " + temp + "°F";
         humValue.innerHTML = "Humidity: " + humidity + "%";
@@ -39,19 +39,19 @@ button.addEventListener("click", async function () {
 
         if (temp >= 80) {
           document.getElementById("recommendation").innerHTML =
-            "Dress and/or shorts! Use sunscreen.";
+            "Recommend: Dress and/or shorts! Use sunscreen.";
         } else if (temp >= 70) {
           document.getElementById("recommendation").innerHTML =
-            "Short sleeves and/or shorts.";
+            "Recommend: Short sleeves and/or shorts.";
         } else if (temp >= 55) {
           document.getElementById("recommendation").innerHTML =
-            "Sweaters and/or hoodies.";
+            "Recommend: Sweaters and/or hoodies.";
         } else if (temp >= 30) {
           document.getElementById("recommendation").innerHTML =
-            "Jacket and/or coats.";
+            "Recommend: Jacket and/or coats.";
         } else {
           document.getElementById("recommendation").innerHTML =
-            "Snowboots and/or heavy jacket.";
+            "Recommend: Snowboots and/or heavy jacket.";
         }
       });
   } catch (error) {

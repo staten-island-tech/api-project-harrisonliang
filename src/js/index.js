@@ -31,6 +31,7 @@ button.addEventListener("click", async function () {
         descValue.innerHTML = "Description: " + description;
         const imgSrc = "http://openweathermap.org/img/w/" + iconID + ".png";
 
+
         iconValue.innerHTML =
           '<img src="' +
           imgSrc +
@@ -57,6 +58,8 @@ button.addEventListener("click", async function () {
     console.log(error);
     alert("Enter a city!");
   }
+
+    });
 });
 
 // create a list of our used consts

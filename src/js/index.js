@@ -5,7 +5,59 @@ const tempValue = document.querySelector(".temperature");
 const descValue = document.querySelector(".description");
 const humValue = document.querySelector(".humidity");
 const iconValue = document.querySelector(".icon");
+async function init() {
+  try {
+    await fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+        "New York" +
+        "&units=imperial&appid=da0a318dadbce04410d8277c890cd27c"
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        const description = response["weather"][0]["description"];
+        const temp = response["main"]["temp"];
+        const humidity = response["main"]["humidity"];
+        const iconID = response["weather"][0]["icon"];
+        console.log(description);
+        console.log(temp);
+        console.log(humidity);
+        console.log(iconID);
+        document.querySelector(".weather").style.display = "block";
 
+        tempValue.innerHTML = "Temperature: " + temp + "°F";
+        humValue.innerHTML = "Humidity: " + humidity + "%";
+        descValue.innerHTML = "Description: " + description;
+        const imgSrc = "http://openweathermap.org/img/w/" + iconID + ".png";
+
+        iconValue.innerHTML =
+          '<img src="' +
+          imgSrc +
+          '"alt="Icon for the weather" height= "25%" />';
+
+        if (temp >= 80) {
+          document.getElementById("recommendation").innerHTML =
+            "Recommend: Dress and/or shorts! Use sunscreen.";
+        } else if (temp >= 70) {
+          document.getElementById("recommendation").innerHTML =
+            "Recommend: Short sleeves and/or shorts.";
+        } else if (temp >= 55) {
+          document.getElementById("recommendation").innerHTML =
+            "Recommend: Sweaters and/or hoodies.";
+        } else if (temp >= 30) {
+          document.getElementById("recommendation").innerHTML =
+            "Recommend: Jacket and/or coats.";
+        } else {
+          document.getElementById("recommendation").innerHTML =
+            "Recommend: Snowboots and/or heavy jacket.";
+        }
+      });
+  } catch (error) {
+    console.log(error);
+    alert("Julissa Bad");
+  }
+}
+init();
 button.addEventListener("click", async function () {
   try {
     await fetch(
